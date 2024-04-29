@@ -1,0 +1,9 @@
+footer a {
+  color: #ff677f;
+}
+.App footer {
+  font-size: 14px;
+  margin: 10px 0;
+  text-align: center;
+  font-family: monospace;
+}
