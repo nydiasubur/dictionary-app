@@ -8,14 +8,14 @@ export default function Dictionary() {
   }
   function updateSearch(event) {
     event.preventDefault();
-    console.log(event.target.value);
-    //setCurrentSearch(event.data);
+    setCurrentSearch(event.target.value);
+    console.log(currentSearch);
   }
+
   return (
     <div className="Dictionary">
       <form onSubmit={handleSubmit}>
         <input type="search" autoFocus={true} onChange={updateSearch} />
-        <input type="submit" value="search" />
       </form>
     </div>
   );
