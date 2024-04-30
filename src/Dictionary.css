@@ -1,0 +1,8 @@
+.Meanings {
+  margin-bottom: 20px;
+}
+
+.Meanings .definition {
+  font-weight: 300;
+  text-color: red;
+}

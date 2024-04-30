@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Result from "./Result";
+import "./Dictionary.css";
 
 export default function Dictionary() {
   let [currentSearch, setCurrentSearch] = useState("");
@@ -33,7 +34,6 @@ export default function Dictionary() {
       <form onSubmit={handleSubmit}>
         <input type="search" autoFocus={true} onChange={updateSearch} />
       </form>
-
       <Result searchResults={searchResults} loaded={loaded} />
     </div>
   );
