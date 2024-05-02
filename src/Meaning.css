@@ -1,0 +1,16 @@
+.Meanings {
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 300;
+}
+.partOfSpeech {
+  text-transform: uppercase;
+  color: #737984;
+  font-weight: 400;
+}
+.definition {
+}
+.synonyms {
+  font-style: italic;
+  color: #737984;
+}

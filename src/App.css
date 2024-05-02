@@ -1,6 +1,9 @@
 footer a {
   color: #ff677f;
 }
+.App {
+  margin: 80px;
+}
 .App footer {
   font-size: 14px;
   margin: 10px 0;

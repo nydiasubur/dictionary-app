@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
 import Dictionary from "./Dictionary";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
     <div className="App">
-      <p>hello!</p>
       <Dictionary />
       <footer>
         This project was coded with 🧡 by{" "}

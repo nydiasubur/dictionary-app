@@ -5,8 +5,8 @@ export default function Result(props) {
     console.log(`api result; ${props.searchResults.word}`);
     return (
       <div className="Result">
-        <h1>{props.searchResults.word}</h1>
-        <h2>{props.searchResults.phonetic}</h2>
+        <h1 className="main-word">{props.searchResults.word}</h1>
+        <h2 className="phonetic">{props.searchResults.phonetic}</h2>
         {props.searchResults.meanings.map((meaning, index) => {
           console.log(meaning);
           return (
@@ -18,6 +18,6 @@ export default function Result(props) {
       </div>
     );
   } else {
-    return "what";
+    return null;
   }
 }

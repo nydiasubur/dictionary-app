@@ -1,12 +1,13 @@
 import React from "react";
-
+import "./Meaning.css";
 export default function Meanings(props) {
+  //check if synonyms exist and render the synonyms in array seperated by double space
   function beautifySynonyms(synonyms) {
     if (synonyms !== null) {
       return (
         <div>
-          <div>Synonyms</div>
-          {synonyms.join("  ")}
+          <span>Synonyms: </span>
+          {synonyms.join(", ")}
         </div>
       );
     }

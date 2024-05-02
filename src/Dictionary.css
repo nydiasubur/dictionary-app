@@ -1,8 +1,28 @@
+.Dictionary input {
+  width: 100%;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 20px auto;
+  color: #333;
+}
 .Meanings {
   margin-bottom: 20px;
 }
 
 .Meanings .definition {
   font-weight: 300;
-  text-color: red;
+  border-radius: 6px;
+}
+
+.Result .main-word {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-family: serif;
+  font: size 40px;
+  margin: 0;
+}
+
+.Result .phonetic {
+  font-weight: 350;
+  font-style: italic;
 }
