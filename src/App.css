@@ -2,12 +2,18 @@ footer a {
   color: #ff677f;
 }
 .App {
-  margin: 80px;
+  margin: 100px;
+  margin-top: 80px;
+  border-radius: 6px;
+  box-shadow: 0 10px 20px rgb(0 0 0 / 15%);
+  padding: 70px;
+  padding-top: 30px;
+  background-color: #ddbc4e;
 }
+
 .App footer {
   font-size: 14px;
-
   text-align: center;
   font-family: monospace;
-  margin-top: auto;
+  margin-top: 40px;
 }

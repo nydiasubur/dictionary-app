@@ -1,12 +1,13 @@
 .Dictionary input {
   width: 100%;
   border-radius: 8px;
-  padding: 10px;
-  margin: 20px auto;
-  color: #333;
+  padding: 12px;
+  margin: 30px auto;
+  color: #848484;
+  margin-bottom: 35px;
 }
 .Dictionary .header {
-  text-align: center;
+  font-size: 80px;
 }
 
 .Meanings {
