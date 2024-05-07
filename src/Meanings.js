@@ -22,9 +22,13 @@ export default function Meanings(props) {
 
   return (
     <div className="Meanings">
-      <div className="definition">{props.meaning.definition}</div>
-      <div className="example">{displayExample(props.meaning.example)}</div>
-      <div className="synonyms">{beautifySynonyms(props.meaning.synonyms)}</div>
+      <li>
+        <div className="definition">{props.meaning.definition}</div>
+        <div className="example">{displayExample(props.meaning.example)}</div>
+        <div className="synonyms">
+          {beautifySynonyms(props.meaning.synonyms)}
+        </div>
+      </li>
     </div>
   );
 }

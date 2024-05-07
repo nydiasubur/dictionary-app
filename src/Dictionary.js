@@ -7,6 +7,7 @@ export default function Dictionary() {
   let [currentSearch, setCurrentSearch] = useState("");
   let [searchResults, setSearchResults] = useState({ empty: "empty" });
   let [loaded, setLoaded] = useState(false);
+  let [images, setImages] = useState(null);
 
   // API documentation: https://www.shecodes.io/learn/apis/dictionary
 
@@ -16,7 +17,11 @@ export default function Dictionary() {
     let key = `tc84aadoa14ab4fdf5f3430525cff939`;
     let url = `https://api.shecodes.io/dictionary/v1/define?word=${currentSearch}&key=${key}`;
     axios.get(url).then(displaySearchResult);
-    alert("searching");
+    alert("searching..");
+
+    let imageKey = `tc84aadoa14ab4fdf5f3430525cff939`;
+    let url2 = `https://api.shecodes.io/images/v1/search?query=${currentSearch}&key=${imageKey}`;
+    axios.get(url2).then(displayImageResult);
   }
   function updateSearch(event) {
     event.preventDefault();
@@ -29,6 +34,12 @@ export default function Dictionary() {
     setSearchResults(response.data);
     setLoaded(true);
   }
+  function displayImageResult(response) {
+    //console.log(JSON.stringify(response.data.photos));
+    setImages(response.data.photos);
+    // console.log(JSON.stringify(images));
+  }
+
   return (
     <div className="Dictionary">
       <form onSubmit={handleSubmit}>
@@ -39,7 +50,7 @@ export default function Dictionary() {
           onChange={updateSearch}
         />
       </form>
-      <Result searchResults={searchResults} loaded={loaded} />
+      <Result searchResults={searchResults} images={images} loaded={loaded} />
     </div>
   );
 }
