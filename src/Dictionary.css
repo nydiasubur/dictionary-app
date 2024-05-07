@@ -5,6 +5,10 @@
   margin: 20px auto;
   color: #333;
 }
+.Dictionary .header {
+  text-align: center;
+}
+
 .Meanings {
   margin-bottom: 20px;
 }
