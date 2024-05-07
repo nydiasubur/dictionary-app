@@ -42,12 +42,12 @@ export default function Dictionary() {
 
   return (
     <div className="Dictionary">
-      <h1 className="header"> Dictionary </h1>
+      <h1 className="header"> This is a dictionary. </h1>
       <form onSubmit={handleSubmit}>
         <input
           type="search"
           className="input"
-          placeholder="meaning"
+          placeholder="Seach your word here. e.g.: sunset, love, apple.."
           autoFocus={true}
           onChange={updateSearch}
         />
