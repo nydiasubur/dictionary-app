@@ -4,7 +4,7 @@ import Result from "./Result";
 import "./Dictionary.css";
 
 export default function Dictionary() {
-  let [currentSearch, setCurrentSearch] = useState("");
+  let [currentSearch, setCurrentSearch] = useState("sunset");
   let [searchResults, setSearchResults] = useState({ empty: "empty" });
   let [loaded, setLoaded] = useState(false);
   let [images, setImages] = useState(null);
@@ -25,7 +25,6 @@ export default function Dictionary() {
   }
   function updateSearch(event) {
     event.preventDefault();
-    console.log(`event ${event.target.value}`);
     setCurrentSearch(event.target.value);
   }
 
@@ -47,7 +46,7 @@ export default function Dictionary() {
         <input
           type="search"
           className="input"
-          placeholder="Seach your word here. e.g.: sunset, love, apple.."
+          placeholder="Seach your word here. e.g.: sunset"
           autoFocus={true}
           onChange={updateSearch}
         />
